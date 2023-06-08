@@ -5,6 +5,7 @@
 
 const char* ssid     = SECRET_SSID;
 const char* password = SECRET_PASS;
+const char* mqtt_server = MQTT_BROKER;
 
 #define LED_R     16    //D0
 #define CTRLPZT    5    //D1
@@ -19,10 +20,6 @@ const char* password = SECRET_PASS;
 
 WiFiServer server(80);            // Create a webserver object that listens for HTTP request on port 80
 String header;                    // For HTML
-
-const char* ssid     = SECRET_SSID;
-const char* password = SECRET_PASS;
-const char* mqtt_server = MQTT_BROKER;
 
 String sum_str;
 
